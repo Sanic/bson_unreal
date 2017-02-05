@@ -10,8 +10,10 @@ Open the log window and check the output there for the following json string:
 ## Build
 - The windows library has been built with VS2015 Community on Win64
 - The linux library has been built with gcc 4.8 via:
-    (export CFLAGS="$CFLAGS -fPIC"; ./configure --prefix=/tmp/libbson --enable-static=yes --enable-shared=no --enable-tests=no)
-    make && make install
+
+>    (export CFLAGS="$CFLAGS -fPIC"; ./configure --prefix=/tmp/libbson --enable-static=yes --enable-shared=no --enable-tests=no)
+> 
+>    make && make install
 
 ## Potential problems 
 libbson comes with a configure scripts that adjusts the header files depending on your plattform.
